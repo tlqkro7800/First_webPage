@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" method="post" action="">
+        색을 선택하세요 :
+        <input type="color" name="color" id="color_select"><br><br>
+
+        만족도를 선택하세요 :
+        <input type="range" min="1" max="5" value="3"><br><br>
+        
+    점수를 입력하세요 :
+        <input type="number" max="100" min="0" step="5" value="50"> <br><br>
+
+        성별을 입력하세요 :
+        <select name="gender" id="gender_selecter">
+            <option value="female" >여자</option>
+            <option value="male" selected>남자</option>
+            <option value="none">기타</option>
+        </select><br><br>
+
+        음료수를 입력하세요 :
+        <input list="list" maxlength="10">
+        <datalist id="list">
+            <option value="피크닉 사과맛"></option>
+            <option value="피크닉 청포도맛"></option>
+            <option value="피크닉 복숭아맛"></option>
+        </datalist><br>
+
+        <fieldset>
+            <legend style="color: blue;">풀    어</legend>
+            <label for="5">5번</label>        
+            <br>
+           ( 2i + 5 ) + ( 5i - 12) = ?<br>
+           <input type="radio" id="1" value="1"> 1번 <input type="radio" id="2" value="2"> 2번 <input type="radio" id="3" value="3"> 3번 <input type="radio" id="4" value="4"> 4번 <input type="radio" id="5" value="5"> 5번
+           <br>
+        </fieldset>
+
+        <input type="file", accept="img/png"><br><br>
+
+        <input type="submit" , onclick="alert('제출해 주셔서 안 감사합니다!')"><br><br><br><br>
+
+    </form>
+</body>
+</html>
