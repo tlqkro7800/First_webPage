@@ -1,0 +1,5 @@
+h1, p{font-size: larger;}
+a:link{color: rgb(0, 139, 42);}
+#css{color: crimson; background-color: gold;}
+p:hover{color: aquamarine; background-color: rgb(0, 217, 255);}
+a:visited{color: deepskyblue;}
