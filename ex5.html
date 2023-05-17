@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse;
+        }
+        td, th {
+            border-bottom: 1px solid green;
+            width: 100px;
+        }
+        th {
+            background-color: green;
+            color: white;
+        }
+        tr:nth-child(odd) {
+            background-color: bisque;
+        }
+        tr:hover {
+            background-color: brown;
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <form action="process.jsp">
+            <label for="name">이름</label>
+            <input type="text" id="name" name="name" placeholder="이름"><br>
+            
+            <label for="email">이에일</label>
+            <input type="email" id="email" name="email" placeholder="이메읽0"><br>
+            <label for="subject">상퓸</label>
+            <input type="subject" id="subject" name="subject" placeholder="상품평"><br>
+            
+            <input type="submit" name="subject">
+        </form>
+    </div>
+    <table>
+        <caption>기말고사 성적 리스트</caption>
+        <thead>
+            <tr>
+                <th>학번</th>
+                <th>이름</th>
+                <th>성적</th>
+                <th>학점</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>10412</td>
+                <td>도윤게이</td>
+                <td>29</td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>10413</td>
+                <td>재히주인</td>
+                <td>34</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>10418</td>
+                <td>이정우</td>
+                <td>1</td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>James</td>
+                <td>75</td>
+                <td>C+</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kate</td>
+                <td>96</td>
+                <td>A0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
