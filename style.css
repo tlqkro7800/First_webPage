@@ -1,0 +1,41 @@
+body{
+    height: 3000px;
+}
+
+.wrap{
+    width: 400px; height: 300px;
+    background-color: violet;
+}
+
+.container{
+    width: 300px;
+    position: relative;
+    background-color: royalblue;
+}
+
+.container .item{
+    border: 4px dashed red;
+    background-color: orange;
+}
+
+.container .item:nth-child(1){
+    width: 100px; height: 100px;
+    z-index: 100;
+    display: inline;
+    position: relative;
+}
+
+.container .item:nth-child(2){
+    width: 140px; height: 70px;
+    position: absolute;
+    display: inline;
+    left: 30px; top: 70px;
+    z-index: 300;
+}
+
+.container .item:nth-child(3){
+    width: 70px; height: 120px;
+    position: relative;
+    z-index: 200;
+    display: inline=block;
+}                                          
