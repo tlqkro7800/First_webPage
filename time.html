@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="test1"></h1>
+    <h1 id="test2"></h1>
+</body>
+<script>
+    let time = new Date().getHours();
+    let msg;
+    document.getElementById('test1').innerHTML = "현 시간은 " + time + "시";
+    if (time < 12){
+        msg = "오전입니다";
+    }
+    else{
+        msg = "오후입니다";
+    }
+    document.getElementById('test2').innerHTML = msg;
+</script>
+</html>
