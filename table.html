@@ -1,0 +1,42 @@
+<style>  
+    table { border-collapse:collapse; }  
+    th, td { border:1px solid gray; }
+    </style>
+    
+    <button onclick="add_row()">행 추가하기</button>
+    <button onclick="delete_row()">행 삭제하기</button>
+    <button onclick="delete_all()">행 전체 삭제하기</button>
+    <hr>
+    <table>
+      <thead>
+        <th>1</th>
+        <th>2</th>
+      </thead>
+      <tbody id="my-tbody"></tbody>
+    </table>
+    
+    <script>
+      function add_row() {
+        var bd = document.getElementById('my-tbody');
+        var row = bd.insertRow( bd.rows.length );
+        var cell1 = row.insertCell(0);
+        var cell2 = row.insertCell(1);
+        for (let i=bd.column.length; i>0; i--);
+        // cell1.innerHTML = bd.rows.length;
+        // cell2.innerHTML = "Hello World!";
+      }
+    
+      function delete_row() {
+        var bd = document.getElementById('my-tbody');
+        if (bd.rows.length < 1) return;
+        bd.deleteRow( bd.rows.length-1 );
+      }
+      function delete_all() {
+        var bd = document.getElementById('my-tbody');
+        for (let i=bd.rows.length; i>0; i--){
+          bd.deleteRow( bd.rows.i );
+        }
+        // while (bd.rows.length == 1) return;
+        // bd.deleteRow( bd.rows.length-1 );
+      }
+    </script>
